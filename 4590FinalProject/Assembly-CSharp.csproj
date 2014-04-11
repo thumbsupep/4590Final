@@ -46,16 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\CharacterForces.cs" />
-     <Compile Include="Assets\scripts\CharacterObjectGun.cs" />
-     <Compile Include="Assets\scripts\CharacterSounds.cs" />
-     <Compile Include="Assets\scripts\CollisionAudioHandlerExample.cs" />
-     <Compile Include="Assets\scripts\ExtensionMethods.cs" />
      <Compile Include="Assets\scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\scripts\First-Person Controller\PlatformInputController.cs" />
-     <Compile Include="Assets\scripts\SuperSized.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\CharacterForces.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\CharacterObjectGun.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\CharacterSounds.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\CollisionAudioHandlerExample.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\ExtensionMethods.cs" />
+     <Compile Include="Assets\scripts\Rob&apos;s Examples\SuperSized.cs" />
+     <Compile Include="Assets\scripts\Visuals.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
