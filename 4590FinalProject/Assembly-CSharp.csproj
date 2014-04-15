@@ -57,6 +57,7 @@
      <Compile Include="Assets\scripts\Rob&apos;s Examples\ExtensionMethods.cs" />
      <Compile Include="Assets\scripts\Rob&apos;s Examples\SuperSized.cs" />
      <Compile Include="Assets\scripts\Visuals.cs" />
+     <Compile Include="Assets\scripts\friendFinder.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
