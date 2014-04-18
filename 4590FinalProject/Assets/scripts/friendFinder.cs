@@ -6,7 +6,7 @@ public class friendFinder : MonoBehaviour {
 
 	Vector3 prevPos,currPos;
 	float initialPitch, ambientVol, lowerVol;
-	public static int fr;
+	int fr;
 
 	void Start () {
 		fr = 0;
@@ -18,28 +18,28 @@ public class friendFinder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(fr == 1)
-		{
 		currPos = this.transform.position;
 
 		if(Input.GetKeyDown(KeyCode.R))
 		{
+			if(fr < 2)
+			{
+				fr++;
 				GameObject.FindWithTag("ambient").audio.volume = lowerVol;
-				audio.mute = !audio.mute;
-				if(audio.mute == true)
-					GameObject.FindWithTag("ambient").audio.volume = ambientVol;
+			}
+			else
+			{
+				fr=0;
+				GameObject.FindWithTag("ambient").audio.volume = ambientVol;
+			}
 		}
 
 		if(fr==1)
 			currPos = GameObject.Find("friend1").transform.position;
 		else
-			currPos = GameObject.Find("friend2").transform.position;
+			currPos = GameObject.Find("friend1").transform.position;
 
-		if(Vector3.Distance (currPos, GameObject.FindWithTag("Player").transform.position) < 5 )
-		{
-			audio.pitch = initialPitch + 0.7F;
-		}
-		else if((Vector3.Distance (currPos, GameObject.FindWithTag("Player").transform.position)) < 15 )
+		if((Vector3.Distance (currPos, GameObject.FindWithTag("Player").transform.position)) < 15 )
 		{
 			audio.pitch = initialPitch + 0.3F;
 		}
@@ -82,9 +82,8 @@ public class friendFinder : MonoBehaviour {
 			GameObject.Find("Front").renderer.enabled = false;
 			GameObject.Find("Left").renderer.enabled = false;
 			GameObject.Find("Right").renderer.enabled = false;
-				audio.Stop ();
-		}
-
+			GameObject.Find("friend1").audio.Stop();
+			GameObject.Find("friend2").audio.Stop();
 		}
 
 	}
