@@ -17,7 +17,11 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																											GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																										GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> parent of e008705... Merge branch 'master' of https://github.com/thumbsupep/4590Final
 =======
 																			GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> FETCH_HEAD
